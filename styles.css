@@ -1,0 +1,209 @@
+/* manrope-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/manrope-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/manrope-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*cutom variables*/
+
+:root {
+  /*colors*/
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  /*breakpoints*/
+  --mobile: 375px;
+  --desktop: 1440px;
+
+  /*font sizes*/
+  /* @link https://utopia.fyi/type/calculator?c=320,13,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+  --step--2: clamp(0.5642rem, 0.4822rem + 0.41vw, 0.8rem);
+  --step--1: clamp(0.6771rem, 0.5648rem + 0.5616vw, 1rem);
+  --step-0: clamp(0.8125rem, 0.6603rem + 0.7609vw, 1.25rem);
+  --step-1: clamp(0.975rem, 0.7707rem + 1.0217vw, 1.5625rem);
+  --step-2: clamp(1.17rem, 0.8976rem + 1.362vw, 1.9531rem);
+  --step-3: clamp(1.404rem, 1.0432rem + 1.8042vw, 2.4414rem);
+  --step-4: clamp(1.6848rem, 1.2093rem + 2.3773vw, 3.0518rem);
+  --step-5: clamp(2.0218rem, 1.3981rem + 3.1182vw, 3.8147rem);
+
+  /*font-weights*/
+  --regular: 400;
+  --heavy: 700;
+}
+
+html {
+  background-color: var(--light-grayish-blue);
+  font-family: "Manrope";
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+article {
+  width: 327px;
+  height: 512px;
+  background-color: white;
+  box-shadow: 5px 5px 10px #dadada;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.frame {
+  width: 327px;
+  height: 200px;
+  overflow: hidden;
+}
+.illustration {
+  margin: -20px 0px 0px 0px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+.words > h1 {
+  font-size: 1.23rem;
+  font-weight: --heavy;
+  margin: 0 auto;
+  height: 72px;
+  width: 263px;
+  line-height: 24px;
+  color: var(--very-dark-grayish-blue);
+}
+.words > h2 {
+  font-size: 1rem;
+  margin: 1rem auto;
+  height: 100px;
+  width: 263px;
+  line-height: 20px;
+  font-weight: var(--regular);
+  color: var(--desaturated-dark-blue);
+}
+footer {
+  position: relative;
+}
+.author {
+  margin-top: 2rem;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.author__avatar {
+  border-radius: 50%;
+  width: 40px;
+}
+.author__data > h1,
+.author__data > h2 {
+  font-size: 1rem;
+  color: var(--very-dark-grayish-blue);
+  margin-left: -3rem;
+}
+
+.socials {
+  z-index: 2;
+}
+.button-background {
+  margin: 0px 16px -24px 0px;
+}
+
+.button {
+  margin: 0px 0px 0px 8px;
+}
+
+.socials--pressed {
+  display: none;
+  z-index: -1;
+  position: absolute;
+  top: 28px;
+  right: -28px;
+  width: 330px;
+  height: 64px;
+  background-color: var(--very-dark-grayish-blue);
+}
+.socials--pressed__icons {
+  color: var(--light-grayish-blue);
+  display: flex;
+  width: 14rem;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+}
+.socials--pressed__icons > h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--grayish-blue);
+}
+
+@media (min-width: 1440px) {
+  article {
+    width: 730px;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+  }
+  .frame {
+    width: 280px;
+    height: 285px;
+    overflow: hidden;
+  }
+  .illustration {
+    height: 285px;
+    max-width: 110%;
+    margin: 0;
+  }
+  .socials--pressed {
+    display: block;
+  }
+  .author {
+    margin-top: 30px;
+  }
+
+  .words > h1 {
+    font-size: 1.5rem;
+    width: 350px;
+  }
+  .words > h2 {
+    font-size: 1rem;
+    width: 365px;
+    height: 60px;
+  }
+  .socials--pressed {
+    border-radius: 10px;
+    width: 248px;
+    height: 54px;
+    top: -30px;
+    right: -96px;
+  }
+  .author__data > h1,
+  .author__data > h2 {
+    margin-left: -5 rem;
+  }
+  .socials-callout{
+    fill: var(--very-dark-grayish-blue);
+  }
+  .socials--pressed__icons{
+    margin-top:-130px;
+
+  }
+}
