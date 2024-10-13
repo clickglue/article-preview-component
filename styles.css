@@ -115,8 +115,12 @@ footer {
 .author__data > h1,
 .author__data > h2 {
   font-size: 1rem;
-  color: var(--very-dark-grayish-blue);
+  color: --very-dark-grayish-blue;
   margin-left: -3rem;
+}
+.author__data > h2 {
+  color:var(--desaturated-dark-blue);
+  font-weight: var(--regular);
 }
 
 .socials {
@@ -189,6 +193,7 @@ footer {
     height: 60px;
   }
   .socials--pressed {
+    display: none;
     border-radius: 10px;
     width: 248px;
     height: 54px;
@@ -197,13 +202,12 @@ footer {
   }
   .author__data > h1,
   .author__data > h2 {
-    margin-left: -5 rem;
+    margin-left: -10rem;
   }
   .socials-callout{
     fill: var(--very-dark-grayish-blue);
   }
   .socials--pressed__icons{
     margin-top:-130px;
-
   }
 }

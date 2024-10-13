@@ -1,8 +1,8 @@
 const socialsButton = document.getElementById("socials-button");
 const socialsBanner = document.getElementById("socials-banner");
+const socialsButtonBackground = document.getElementById("button-background");
 
 socialsButton.onclick = function () {
-  console.log("button clicked");
   if (socialsBanner.style.display === "none") {
     socialsBanner.style.display = "block";
   } else {

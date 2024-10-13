@@ -11,12 +11,12 @@ Your users should be able to:
 
 ### Screenshot
 
-![Screenshot]()
+![Screenshot](./Scherm­afbeelding%202024-10-13%20om%2022.31.37.png)
 
 ### Links
 
-- Solution URL: [Code on Github](https://github.com/clickglue/meet-landing-page)
-- Live Site URL: [Live site on Github Pages]()
+- Solution URL: [Code on Github](https://github.com/clickglue/article-preview-component)
+- Live Site URL: [Live site on Github Pages](https://clickglue.github.io/article-preview-component/)
 
 ## My process
 
